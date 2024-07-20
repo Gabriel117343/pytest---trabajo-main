@@ -1,3 +1,5 @@
+
+
 clientes = {}
 usuarios = {}
 idcliente = 0
@@ -222,8 +224,7 @@ def ingresoUsuarios():
     idusuario += 1
     codigo = idusuario
     usuario = [codigo,username,clave,nombre,apellidos,correo]
-    usuarios[username] = usuario
-            
+    usuarios[username] = usuario     
 
 while True:
     menuUsuarios()
