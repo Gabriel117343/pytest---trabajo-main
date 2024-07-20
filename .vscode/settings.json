@@ -1,0 +1,19 @@
+// Activar el entorno virtual automaticamente en la terminal de Visual Studio Code
+{
+  "python.terminal.activateEnvironment": true,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "args": [
+        "-ExecutionPolicy", // evitar temporalmente la politica de ejecución de PowerShell
+        "Bypass",
+        "-NoExit",
+        "-Command",
+        "& '.\\venv\\Scripts\\Activate.ps1'"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "python.terminal.executeInFileDir": true
+}
